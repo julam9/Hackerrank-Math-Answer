@@ -1,5 +1,5 @@
 class Solution:
-    def reversedindex(array, step):
+    def reversedindex(self, array, req_index:int) -> int:
         i = 0 
         while i < len(array):
             if i+1 == len(array):
@@ -7,4 +7,4 @@ class Solution:
             else: 
                 array[i+1] = array[i] 
             i =+ 1
-        return array.index(step)
+        return array.index(req_index)
